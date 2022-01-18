@@ -20,7 +20,7 @@ let heightTwo = Math.random() * 40;
 let heightThree = Math.random() * 40;
 
 
-
+document.addEventListener("mousemove", mousemoveHandler)
 function mousemoveHandler(event) {
     // Update mouseX and mouseY
     let cnvRect = cnv.getBoundingClientRect()
@@ -29,7 +29,6 @@ function mousemoveHandler(event) {
 }
 
 requestAnimationFrame(draw);
-
 function draw() {
     ctx.fillStyle = "black";
     ctx.fillRect(mouseX, mouseY, widthOne, heightOne);
